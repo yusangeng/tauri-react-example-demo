@@ -17,3 +17,7 @@ tauri = { git = "https://github.com/tauri-apps/tauri", branch = "next", features
 [features]
 default = [ "custom-protocol" ]
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.dev]
+opt-level = 1               # Use slightly better optimizations.
+overflow-checks = false     # Disable integer overflow checks.
